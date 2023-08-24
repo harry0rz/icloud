@@ -48,6 +48,16 @@
    $ docker-compose up -d
    ```
 
-   
+3. 数据迁移
+
+   * 硬盘拷贝
+   ```bash
+   cp icloud/nc_config/nextcloud/data/{user} /media/XXXXX
+
+
+   拷贝
+   cp -R /media/XXX/data/{user}
+   sudo docker exec -u www-data -ti icloud_app_1 php occ files:scan zonebi
+   ```
 
    
